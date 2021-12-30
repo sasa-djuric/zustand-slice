@@ -1,0 +1,9 @@
+root = true
+
+[*.{js,ts,json}]
+indent_style = tab
+indent_size = 4
+
+[*.{md}]
+indent_style = tab
+indent_size = 2

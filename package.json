@@ -1,6 +1,6 @@
 {
 	"name": "zustand-slice",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "A zustand middleware that provides an API like createSlice from Redux toolkit.",
 	"private": false,
 	"main": "./index.js",
@@ -25,6 +25,7 @@
 		"zustand",
 		"slice",
 		"redux",
+		"toolkit",
 		"store",
 		"state",
 		"management",

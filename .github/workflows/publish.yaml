@@ -27,9 +27,6 @@ jobs:
             - name: Build
               run: npm run build
 
-            - name: Install husky
-              run: cd dist && npm install husky
-
             - name: Publish
               run: cd dist && npm publish --access=public
               env:

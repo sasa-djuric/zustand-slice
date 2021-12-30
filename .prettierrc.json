@@ -7,5 +7,14 @@
 	"bracketSpacing": true,
 	"semi": true,
 	"trailingComma": "none",
-	"useTabs": true
+	"useTabs": true,
+	"overrides": [
+		{
+			"files": "*.md",
+			"options": {
+				"tabWidth": 2,
+				"useTabs": false
+			}
+		}
+	]
 }

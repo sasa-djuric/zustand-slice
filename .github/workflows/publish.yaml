@@ -27,7 +27,10 @@ jobs:
             - name: Build
               run: npm run build
 
+            - name: Install husky
+              run: cd dist && npm install husky
+
             - name: Publish
-              run: cd dist && npm config set ignore-scripts && npm publish --access=public
+              run: npm publish --access=public
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

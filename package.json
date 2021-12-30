@@ -2,12 +2,13 @@
 	"name": "zustand-slice",
 	"version": "1.0.0",
 	"description": "A zustand middleware that provides an API like createSlice from Redux toolkit.",
-	"main": "dist/index.js",
+	"private": false,
+	"main": "./index.js",
 	"files": [
-		"dist/*"
+		"**"
 	],
 	"scripts": {
-		"build": "tsc",
+		"build": "node ./scripts/build.js",
 		"test": "jest",
 		"lint": "eslint src --fix",
 		"prepare": "husky install"
@@ -19,13 +20,23 @@
 		"type": "git",
 		"url": "git+https://github.com/sasa-djuric/zustand-slice.git"
 	},
-	"keywords": [],
+	"keywords": [
+		"react",
+		"zustand",
+		"slice",
+		"redux",
+		"store",
+		"state",
+		"management",
+		"manager",
+		"middleware"
+	],
 	"author": "Saša Đurić",
 	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/sasa-djuric/zustand-slice/issues"
 	},
-	"homepage": "https://github.com/sasa-djuric/zustand-slice#readme",
+	"homepage": "https://github.com/sasa-djuric/zustand-slice",
 	"peerDependencies": {
 		"zustand": ">=3.0.0"
 	},

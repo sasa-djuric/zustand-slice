@@ -28,6 +28,6 @@ jobs:
               run: npm run build
 
             - name: Publish
-              run: cd dist && npm publish --access=public
+              run: cd dist && npm config set ignore-scripts && npm publish --access=public
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
